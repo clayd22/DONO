@@ -1,14 +1,52 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DONO Website alpha</title>
-    <link rel="stylesheet" href="dist/style.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Donation Organizations</title>
+ <link rel="stylesheet" href="dist/style.css">
+ <style>
+   .organization {
+     display: flex;
+     align-items: center;
+     margin-bottom: 20px;
+     transition: transform 0.3s ease;
+   }
+   .organization:hover {
+     transform: scale(1.03);
+   }
+   .organization img {
+     width: 150px;
+     height: 150px;
+     object-fit: cover;
+     margin-right: 20px;
+     transition: box-shadow 0.3s ease;
+   }
+   .organization:hover img {
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   }
+ </style>
 </head>
 <body>
-    <h1>website alpha for host testing</h1>
-    <script src="app/ts/script.ts"></script>
+ <h1>Donation Organizations</h1>
+ <div class="organizations">
+   <div class="organization">
+     <img src="organization1.jpg" alt="Organization 1">
+     <div>
+       <h2>Organization 1</h2>
+       <p>Description of Organization 1 and its mission.</p>
+     </div>
+   </div>
+   <div class="organization">
+     <img src="organization2.jpg" alt="Organization 2">
+     <div>
+       <h2>Organization 2</h2>
+       <p>Description of Organization 2 and its mission.</p>
+     </div>
+   </div>
+   <!-- Add more organizations here -->
+ </div>
+ <script src="app/ts/script.ts"></script>
 </body>
 </html>
